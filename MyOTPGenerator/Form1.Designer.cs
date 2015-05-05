@@ -64,6 +64,7 @@
             this.button_gen.TabIndex = 2;
             this.button_gen.Text = "生成";
             this.button_gen.UseVisualStyleBackColor = true;
+            this.button_gen.Click += new System.EventHandler(this.button_gen_Click);
             // 
             // label2
             // 
@@ -81,7 +82,7 @@
             this.label_code.Name = "label_code";
             this.label_code.Size = new System.Drawing.Size(355, 84);
             this.label_code.TabIndex = 4;
-            this.label_code.Text = "0000 0000";
+            this.label_code.Text = "000 000";
             this.label_code.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -115,6 +116,7 @@
             // timer_gen
             // 
             this.timer_gen.Interval = 1000;
+            this.timer_gen.Tick += new System.EventHandler(this.timer_gen_Tick);
             // 
             // Form1
             // 
